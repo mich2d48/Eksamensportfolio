@@ -1,0 +1,256 @@
+body {
+    background-color: #A0C4FF;
+    margin: 0;
+    padding: 0;
+    font-family: ayuthaya;
+}
+
+@font-face {
+    font-family: ayuthaya;
+    src: url(./font/ayuthaya.ttf);
+  }
+  
+
+/*Link*/
+a {
+    text-decoration: none;
+    color: black;
+}
+/*Link end*/
+/*Her*/
+h2, h1 {
+    text-align: center;
+    text-shadow: 1px 1px #FFC6FF;
+}
+
+/*Header*/
+header {
+    background-color: #A0C4FF;
+    padding-bottom: 70px;
+}
+header img {
+    width: 15%;
+}
+/*header end*/
+
+/*Section*/
+section {
+    background-color: #A0C4FF;
+    padding: 20px;
+    padding-bottom: 40px;
+}
+/*Section end*/
+
+/*footer*/
+footer {
+    background-color: #A0C4FF;
+    margin-top: 600px;
+}
+footer img {
+    width: 30%;
+    display: block;
+    margin: auto;
+}
+/*footer end*/
+
+/*baggrund*/
+.work, .edu, .private, .contact, .port {
+background-repeat: no-repeat;
+background-position: center;
+background-size: cover;
+background-attachment: fixed;
+}
+/*baggrund end*/
+
+/*tidslinje, work og school*/
+.vl {
+    border-left: 6px solid;
+    height: 750px;
+    position: absolute;
+    left: 50%;
+    margin-left: -3px;
+  }
+
+.streg {
+      width: 20%;
+  }
+
+h3,  p{
+    display: inline-block;
+  }
+
+h3 {
+    margin-left: 38%;
+}
+
+p {
+      margin-left: 6%;
+}
+.work section div p, .edu section div p {
+    font-size: 50%;
+}
+
+#workbillede {
+    margin-top: 50px;
+}
+/*Tidslinje end*/
+
+/*work*/
+.work {
+    background-image: url(./Baggrund/work.jpeg);
+}
+
+/*button*/
+.linkedin {
+    border: solid #000;
+    background-color: #FFC6FF;
+    width: fit-content;
+    margin: auto;
+    margin-top: 20px;
+    font-size: 75%;
+    cursor: pointer;
+    opacity: 0.8;
+    box-shadow: 4px 5px #688bc4;
+}
+.linkedin:hover {
+    opacity: 1;
+}
+.linkedin:active {
+    background-color: #ee46ee;
+    box-shadow: 1px 2px #405475;
+    transform: translateY(4px);
+}
+/*button end*/
+/*Work end*/
+
+/*education*/
+.edu {
+    background-image: url(./Baggrund/miguddanelse.jpeg);
+}
+/*education end*/
+
+/*private*/
+.private {
+    background-image: url(./Baggrund/contact.jpeg);
+}
+/*Private end*/
+
+/*contact*/
+.contact {
+    background-image: url(./Baggrund/migsten.jpeg);
+}
+/*contact end*/
+
+/*PortFolio*/
+.port {
+    background-image: url(./Baggrund/atlanten.jpg);
+}
+
+.portfolio {
+    margin-top: 500px;
+}
+section img {
+    display: block;
+    margin: auto;
+    width: 40%;
+    margin-bottom: 20px;
+}
+.portfolio video {
+    width: 100%;
+}
+#gocycleimg {
+    width: 100%;
+    max-width: 500px;
+    margin: auto;
+}
+.portfolio div img{
+    display: inline-block;
+    text-align: center;
+}
+.portfolio p {
+    display: block;
+}
+video {
+    display: block;
+    width: 100%;
+    max-width: 420px;
+    margin: auto;
+}
+/*PortFolio end*/
+
+/*Michala World, index*/
+.bodybox {
+    background-color: #CAFFBF;
+    position: fixed;
+    top: 10px;
+    left: 5px;
+    right: 5px;
+    bottom: 10px;
+    overflow: scroll;
+}
+/*karakter*/
+#caractoryou {
+    width: 100%;
+}
+.caractorbox {
+    width: 30%;
+    display: block;
+    position: relative;
+}
+.message, .mesignmessage {
+    display: none;
+    position: absolute;
+    background-color: #FFC6FF;
+    border: solid 5px #A0C4FF;
+}
+.caractorbox:hover .message, .mesign:hover .mesignmessage {
+    display: block;
+  }
+  /*Karakter end*/
+  /*Bygninger*/
+.buildingbox {
+    width: 40%;
+    position: absolute;
+    right: 20%;
+    top: 0;
+    padding-bottom: 150px;
+}
+.buildings {
+    width: 90%
+}
+/*Bygninger end*/
+
+/*Contact*/
+.contact section div {
+    width: 40%;
+    display: block;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+/*Contact end*/
+/*Michala World end*/
+@media only screen and (max-width: 450px) {
+.vl, .streg {
+    display: none;
+}
+h3,  p{
+    display: block;
+  }
+h3 {
+    margin-left: 20px;
+}
+  }
+
+@media only screen and (min-width: 800px) {
+    h3 {
+        margin-left: 40%;
+    }
+    
+    p {
+          margin-left: 10%;
+    }
+    .work section div p, .edu section div p {
+        font-size: 75%;
+    }
+  }
